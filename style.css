@@ -61,13 +61,6 @@ nav {
   filter: contrast(1);
 }
 
-.tesla_close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: none;
-}
-
 .tesla_models {
   display: flex;
   justify-content: center;
@@ -122,7 +115,7 @@ nav {
     display: none;
   }
   .responsive_menu {
-    display: block;
+    display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,6 +166,14 @@ nav {
   background: transparent;
   width: 270px;
   padding: 9px 24px;
+}
+
+@media screen and (max-width: 1200px) {
+  .tesla_main_hero {
+    top: 40px;
+    left: 150px;
+    height: 250px;
+  }
 }
 
 /* -------- Tesla Model-3 -------- */
@@ -242,6 +243,22 @@ nav {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 1200px) {
+  .tesla_model_3_hero {
+    top: 83px;
+    left: 24px;
+    height: 250px;
+  }
+  .tesla_model_3_hero_second {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .tesla_model_3_hero_second_second {
+    display: none;
+  }
+}
+
 /* -------- Tesla Model- Y -------- */
 
 .tesla_model_y {
@@ -307,6 +324,13 @@ nav {
   color: var(--main-white-text);
   background-color: var(--main-black-btn);
   margin-left: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .tesla_model_y_hero {
+    top: 70px;
+    left: 100px;
+    height: 250px;
+  }
 }
 
 /* -------- Tesla Model- S -------- */
@@ -376,6 +400,14 @@ nav {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 1200px) {
+  .tesla_model_s_hero {
+    top: 70px;
+    left: 100px;
+    height: 250px;
+  }
+}
+
 /* -------- Tesla Model- X -------- */
 
 .tesla_model_x {
@@ -441,6 +473,14 @@ nav {
   color: var(--main-white-text);
   background-color: var(--main-black-btn);
   margin-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .tesla_model_x_hero {
+    top: 70px;
+    left: 100px;
+    height: 250px;
+  }
 }
 
 /* -------- Tesla Solar Panels -------- */
@@ -510,6 +550,14 @@ nav {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 1200px) {
+  .tesla_solar_panels_hero {
+    top: 70px;
+    left: 100px;
+    height: 250px;
+  }
+}
+
 /* -------- Tesla Solar Roof -------- */
 
 .tesla_solar_roof {
@@ -577,6 +625,14 @@ nav {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 1200px) {
+  .tesla_solar_roof_hero {
+    top: 70px;
+    left: 100px;
+    height: 250px;
+  }
+}
+
 /* -------- Tesla Powerwall -------- */
 
 .tesla_powerwall {
@@ -641,6 +697,14 @@ nav {
   color: var(--main-white-text);
   background-color: var(--main-black-btn);
   margin-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .tesla_powerwall_hero {
+    top: 70px;
+    left: 100px;
+    height: 250px;
+  }
 }
 
 /* -------- Tesla Accessories -------- */
@@ -715,6 +779,14 @@ nav {
   color: var(--main-white-text);
   background-color: var(--main-black-text);
   margin-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .tesla_accessories_hero {
+    top: 70px;
+    left: 100px;
+    height: 250px;
+  }
 }
 
 /* -------- Animation -------- */
