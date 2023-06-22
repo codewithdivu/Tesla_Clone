@@ -1,0 +1,711 @@
+:root {
+  --main-white-text: #fdfdfd;
+  --main-black-text: #1a1d24;
+  --main-small-text: #7d7e80;
+  --main-black-back: #84786a;
+  --main-white-back: #f3eee7;
+  --main-black-btn: #5d5e62;
+  --main-padding: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-black-text);
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* -------- Navbar -------- */
+
+nav {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  background: transparent;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.tesla_logo {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.tesla_logo img {
+  height: 24px;
+  width: 120px;
+  mix-blend-mode: multiply;
+  filter: contrast(1);
+}
+
+.tesla_close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.tesla_models {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tesla_models ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.model {
+  margin-left: 25px;
+}
+
+.tesla_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tesla_menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_item {
+  margin-right: 25px;
+}
+
+.responsive_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.menu_btn {
+  color: var(--main-white-text);
+  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  padding: 5px 13px;
+  border-radius: 2px;
+  border: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .tesla_models {
+    display: none;
+  }
+  .tesla_menu {
+    display: none;
+  }
+  .responsive_menu {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+}
+
+/* -------- Tesla -------- */
+
+#tesla_main video {
+  height: auto;
+  width: 100%;
+}
+
+.tesla_main_hero {
+  position: absolute;
+  top: 70px;
+  left: 575px;
+  z-index: 1;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tesla_main_hero_first {
+  color: var(--main-white-text);
+}
+
+.tesla_main_hero_first big {
+  font-size: 45px;
+  font-weight: 500;
+}
+.tesla_main_hero_first p {
+  text-align: center;
+  font-weight: 400;
+}
+
+.tesla_main_hero_second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tesla_main_hero_second button {
+  cursor: pointer;
+  color: var(--main-white-text);
+  border: 3px solid var(--main-white-text);
+  background: transparent;
+  width: 270px;
+  padding: 9px 24px;
+}
+
+/* -------- Tesla Model-3 -------- */
+
+.tesla_model_3 {
+  position: relative;
+}
+
+.tesla_model_3 img {
+  height: auto;
+  width: 100%;
+}
+
+.tesla_model_3_hero {
+  position: absolute;
+  bottom: 60px;
+  left: 430px;
+  z-index: 1;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tesla_model_3_hero_first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5rem;
+}
+.tesla_model_3_hero_first big {
+  font-size: 45px;
+  font-weight: 500;
+}
+.tesla_model_3_hero_first p {
+}
+.tesla_model_3_hero_second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tesla_model_3_hero_second_first {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.tesla_model_3_hero_second_first button {
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 3px;
+  width: 300px;
+}
+
+#model_button_1 {
+  color: var(--main-black-text);
+  background-color: var(--main-white-back);
+}
+#model_button_2 {
+  color: var(--main-white-text);
+  background-color: var(--main-black-btn);
+  margin-left: 10px;
+}
+
+/* -------- Tesla Model- Y -------- */
+
+.tesla_model_y {
+  position: relative;
+}
+
+.tesla_model_y img {
+  height: auto;
+  width: 100%;
+}
+
+.tesla_model_y_hero {
+  position: absolute;
+  bottom: 30px;
+  left: 500px;
+  z-index: 1;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tesla_model_y_hero_first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5rem;
+}
+.tesla_model_y_hero_first big {
+  font-size: 45px;
+  font-weight: 500;
+}
+.tesla_model_y_hero_first p {
+}
+.tesla_model_y_hero_second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tesla_model_y_hero_second_first {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.tesla_model_y_hero_second_first button {
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 3px;
+  width: 300px;
+}
+
+#model_button_1 {
+  color: var(--main-black-text);
+  background-color: var(--main-white-back);
+}
+#model_button_2 {
+  color: var(--main-white-text);
+  background-color: var(--main-black-btn);
+  margin-left: 10px;
+}
+
+/* -------- Tesla Model- S -------- */
+
+.tesla_model_s {
+  position: relative;
+}
+
+.tesla_model_s img {
+  height: auto;
+  width: 100%;
+}
+
+.tesla_model_s_hero {
+  position: absolute;
+  bottom: 30px;
+  left: 500px;
+  z-index: 1;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tesla_model_s_hero_first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5rem;
+}
+.tesla_model_s_hero_first big {
+  font-size: 45px;
+  font-weight: 500;
+}
+.tesla_model_s_hero_first a {
+}
+.tesla_model_s_hero_second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tesla_model_s_hero_second_first {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.tesla_model_s_hero_second_first button {
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 3px;
+  width: 300px;
+}
+
+#model_button_1 {
+  color: var(--main-black-text);
+  background-color: var(--main-white-back);
+}
+#model_button_2 {
+  color: var(--main-white-text);
+  background-color: var(--main-black-btn);
+  margin-left: 10px;
+}
+
+/* -------- Tesla Model- X -------- */
+
+.tesla_model_x {
+  position: relative;
+}
+
+.tesla_model_x img {
+  height: auto;
+  width: 100%;
+}
+
+.tesla_model_x_hero {
+  position: absolute;
+  bottom: 30px;
+  left: 500px;
+  z-index: 1;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tesla_model_x_hero_first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5rem;
+}
+.tesla_model_x_hero_first big {
+  font-size: 45px;
+  font-weight: 500;
+}
+.tesla_model_x_hero_first a {
+}
+.tesla_model_x_hero_second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tesla_model_x_hero_second_first {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.tesla_model_x_hero_second_first button {
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 3px;
+  width: 300px;
+}
+
+#model_button_1 {
+  color: var(--main-black-text);
+  background-color: var(--main-white-back);
+}
+#model_button_2 {
+  color: var(--main-white-text);
+  background-color: var(--main-black-btn);
+  margin-left: 10px;
+}
+
+/* -------- Tesla Solar Panels -------- */
+
+.tesla_solar_panels {
+  position: relative;
+}
+
+.tesla_solar_panels img {
+  height: auto;
+  width: 100%;
+}
+
+.tesla_solar_panels_hero {
+  position: absolute;
+  bottom: 30px;
+  left: 500px;
+  z-index: 1;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tesla_solar_panels_hero_first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5rem;
+}
+.tesla_solar_panels_hero_first big {
+  font-size: 45px;
+  font-weight: 500;
+}
+.tesla_solar_panels_hero_first a {
+}
+.tesla_solar_panels_hero_second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tesla_solar_panels_hero_second_first {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.tesla_solar_panels_hero_second_first button {
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 3px;
+  width: 300px;
+}
+
+#model_button_1 {
+  color: var(--main-black-text);
+  background-color: var(--main-white-back);
+}
+#model_button_2 {
+  color: var(--main-white-text);
+  background-color: var(--main-black-btn);
+  margin-left: 10px;
+}
+
+/* -------- Tesla Solar Roof -------- */
+
+.tesla_solar_roof {
+  position: relative;
+}
+
+.tesla_solar_roof img {
+  height: auto;
+  width: 100%;
+}
+
+.tesla_solar_roof_hero {
+  position: absolute;
+  bottom: 30px;
+  left: 500px;
+  z-index: 1;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tesla_solar_roof_hero_first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5rem;
+}
+.tesla_solar_roof_hero_first big {
+  font-size: 45px;
+  font-weight: 500;
+}
+.tesla_solar_roof_hero_first a {
+}
+.tesla_solar_roof_hero_second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tesla_solar_roof_hero_second_first {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.tesla_solar_roof_hero_second_first button {
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 3px;
+  width: 300px;
+}
+
+#model_button_1 {
+  color: var(--main-black-text);
+  background-color: var(--main-white-back);
+}
+#model_button_2 {
+  color: var(--main-white-text);
+  background-color: var(--main-black-btn);
+  margin-left: 10px;
+}
+
+/* -------- Tesla Powerwall -------- */
+
+.tesla_powerwall {
+  position: relative;
+}
+
+.tesla_powerwall img {
+  height: auto;
+  width: 100%;
+}
+
+.tesla_powerwall_hero {
+  position: absolute;
+  bottom: 30px;
+  left: 500px;
+  z-index: 1;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tesla_powerwall_hero_first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5rem;
+}
+.tesla_powerwall_hero_first big {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.tesla_powerwall_hero_second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tesla_powerwall_hero_second_first {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.tesla_powerwall_hero_second_first button {
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 3px;
+  width: 300px;
+}
+
+#model_button_1 {
+  color: var(--main-black-text);
+  background-color: var(--main-white-back);
+}
+#model_button_2 {
+  color: var(--main-white-text);
+  background-color: var(--main-black-btn);
+  margin-left: 10px;
+}
+
+/* -------- Tesla Accessories -------- */
+
+.tesla_accessories {
+  position: relative;
+}
+
+.tesla_accessories img {
+  height: auto;
+  width: 100%;
+}
+
+.tesla_accessories_hero {
+  position: absolute;
+  bottom: 50px;
+  left: 500px;
+  z-index: 1;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tesla_accessories_hero_first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5rem;
+}
+.tesla_accessories_hero_first big {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.tesla_accessories_hero_second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tesla_accessories_hero_second_first {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.tesla_accessories_hero_second_first button {
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 3px;
+  width: 300px;
+}
+.tesla_accessories_hero_second_second ul {
+  display: flex;
+  flex-direction: row;
+}
+.tesla_accessories_hero_second_second ul li {
+  margin-left: 10px;
+  font-size: 13px;
+  color: #a1a2a3;
+}
+.tesla_accessories_hero_second_second ul li a {
+  color: #a1a2a3;
+  font-weight: bold;
+}
+
+#model_button_2 {
+  color: var(--main-white-text);
+  background-color: var(--main-black-text);
+  margin-left: 10px;
+}
