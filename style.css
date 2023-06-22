@@ -179,6 +179,7 @@ nav {
 
 .tesla_model_3 {
   position: relative;
+  margin-top: -4px;
 }
 
 .tesla_model_3 img {
@@ -245,6 +246,7 @@ nav {
 
 .tesla_model_y {
   position: relative;
+  margin-top: -4px;
 }
 
 .tesla_model_y img {
@@ -311,6 +313,7 @@ nav {
 
 .tesla_model_s {
   position: relative;
+  margin-top: -4px;
 }
 
 .tesla_model_s img {
@@ -377,6 +380,7 @@ nav {
 
 .tesla_model_x {
   position: relative;
+  margin-top: -4px;
 }
 
 .tesla_model_x img {
@@ -443,6 +447,7 @@ nav {
 
 .tesla_solar_panels {
   position: relative;
+  margin-top: -4px;
 }
 
 .tesla_solar_panels img {
@@ -509,6 +514,7 @@ nav {
 
 .tesla_solar_roof {
   position: relative;
+  margin-top: -4px;
 }
 
 .tesla_solar_roof img {
@@ -575,6 +581,7 @@ nav {
 
 .tesla_powerwall {
   position: relative;
+  margin-top: -4px;
 }
 
 .tesla_powerwall img {
@@ -708,4 +715,26 @@ nav {
   color: var(--main-white-text);
   background-color: var(--main-black-text);
   margin-left: 10px;
+}
+
+/* -------- Animation -------- */
+
+.animation {
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.scroll-in-animation {
+  animation: fade-in-bottom 1s ease-in-out both;
 }
